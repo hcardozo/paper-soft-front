@@ -1,0 +1,43 @@
+.viewport-container {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+}
+
+.container {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  flex: 1 1 auto;
+  width: 100%;
+  max-width: none;
+}
+
+.sidenav-content {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidenav {
+  padding-right: 30px;
+}
+
+
+// MENU LATERAL
+ul,
+li {
+  list-style-type: none;
+  margin: 0;
+}
+
+ul {
+  padding-left: 1em;
+}
+
+.mat-tree-node.submenu {
+  margin-left: 8px;
+
+  span {
+    margin-left: 8px;
+  }
+}

@@ -1,6 +1,6 @@
-<mat-card class="contenedor-login"> 
-    
-        <form >
+<mat-card class="contenedor-login">
+
+        <form [formGroup]="formGroup" (ngSubmit)="login()">
             <mat-card-header class="header-login">
                 <div>
                     <i class="bi bi-person-circle"></i>
@@ -17,11 +17,11 @@
                 </mat-form-field>
                 <a href="">Olvide mi contraseña</a>
             </mat-card-content>
-            
+
             <mat-card-footer class="footer-login row">
-                <button mat-raised-button color="primary">Ingresar</button>
+                <button mat-raised-button type="submit" color="primary">Ingresar</button>
                 <span (click)="redirectToRegister()">Registrarme</span>
                 <!-- <a href="" >Registrarme</a> -->
-            </mat-card-footer>            
+            </mat-card-footer>
         </form>
 </mat-card>

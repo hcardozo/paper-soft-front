@@ -13,16 +13,8 @@ const routes: Routes = [
     loadChildren: () => import('./modules/login/login.module').then(m => m.LoginModule)
   },
   {
-    path: 'facturacion',
-    loadChildren: () => import('./modules/facturacion/facturacion.module').then(m => m.FacturacionModule)
-  },
-  {
-    path: 'informes',
-    loadChildren: () => import('./modules/informes/informes.module').then(m => m.InformesModule)
-  },
-  {
-    path: 'inventario',
-    loadChildren: () => import('./modules/inventario/inventario.module').then(m => m.InventarioModule)
+    path: 'home',
+    loadChildren: () => import('./modules/home/home.module').then(m => m.HomeModule)
   }
 ];
 
