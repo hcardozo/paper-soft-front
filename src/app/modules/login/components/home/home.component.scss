@@ -1,0 +1,42 @@
+.contenedor-login {
+    width: 30%;
+    border-radius: 10px;
+    margin: 2em auto;
+}
+
+.header-login {
+    display: block;
+    text-align: center;
+
+    >div {
+        margin: 20px 0 20px 0;
+
+        >i {
+            font-size: 75px;
+        }
+    }
+}
+
+.content-login {}
+
+.footer-login {
+    padding: 10px;
+    margin: 15px;
+    flex-direction: column;
+
+    >button {
+        width: 50%;
+        margin: auto;
+    }
+    >span {
+        width: auto;
+        margin: auto;
+        margin-top: 15px;
+        color: blue;
+        /* Cambia el color del texto a azul para que se parezca a un enlace */
+        text-decoration: underline;
+        /* Agrega una línea subrayada para indicar que es un enlace */
+        cursor: pointer;
+        /* Cambia el cursor al estilo de la mano al pasar por encima */
+    }
+}
