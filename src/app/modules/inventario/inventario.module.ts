@@ -6,11 +6,13 @@ import { SharedModule } from '../shared/shared.module';
 import { RegistroEntradaProductosComponent } from './components/registro-entrada-productos/registro-entrada-productos.component';
 import { MatCardModule } from '@angular/material/card';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { RegistroSalidaProductosComponent } from './components/registro-salida-productos/registro-salida-productos.component';
 
 
 @NgModule({
   declarations: [
-    RegistroEntradaProductosComponent
+    RegistroEntradaProductosComponent,
+    RegistroSalidaProductosComponent
   ],
   imports: [
     CommonModule,

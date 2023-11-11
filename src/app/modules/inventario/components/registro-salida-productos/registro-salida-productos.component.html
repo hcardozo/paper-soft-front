@@ -1,10 +1,10 @@
 <mat-card class="contenedor-registro-producto">
 
   <mat-card-header class="header-registro-producto">
-    <h2>Registro de Entrada de productos</h2>
+    <h2>Registro de Salida de productos</h2>
   </mat-card-header>
   <mat-card-content class="content-registro-producto row">
-    <app-buscar-producto (seleccionarProducto)="registroEntradaProducto($event)"></app-buscar-producto>
+    <app-buscar-producto #buscarProductoComponent [botonIcono]="'do_not_disturb_on'" (seleccionarProducto)="registroSalidaProducto($event)"></app-buscar-producto>
   </mat-card-content>
 
   <mat-card-footer class="footer-registro-producto row">

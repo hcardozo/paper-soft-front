@@ -1,4 +1,4 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { Producto } from '../../interfaces/producto-interface';
 import { INVENTARIO } from '../../constants/inventario-consts';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
@@ -12,6 +12,8 @@ export class BuscarProductoComponent implements OnInit {
 
   @Output() public seleccionarProducto: EventEmitter<any> = new EventEmitter<any>();
 
+  @Input() public botonIcono: string = 'add_circle';
+
   public dataProductos: Producto[] = INVENTARIO;
   public productoFormGroup: FormGroup;
   public productoSeleccionado!: Producto;
@@ -19,7 +21,7 @@ export class BuscarProductoComponent implements OnInit {
   constructor(private formBuilder: FormBuilder) {
     this.productoFormGroup = this.formBuilder.group({
       producto: new FormControl(null, [Validators.required]),
-      cantidad: new FormControl(null, [Validators.required]),
+      cantidad: new FormControl(null, [Validators.required, Validators.min(1)]),
     })
   }
 
@@ -42,4 +44,8 @@ export class BuscarProductoComponent implements OnInit {
     this.seleccionarProducto.emit(objeto);
   }
 
+  public resetFormulario():void {
+    this.productoFormGroup.reset();
+    this.productoFormGroup.updateValueAndValidity();
+  }
 }
