@@ -13,9 +13,7 @@ export class RegistroEntradaProductosComponent {
   @ViewChild('alertaEntradaProducto') public alertaEntradaProducto: any;
   @ViewChild('buscarProductoComponent') public buscarProductoComponent!: BuscarProductoComponent;
 
-  constructor(private snackBar: MatSnackBar) {
-
-  }
+  constructor(private snackBar: MatSnackBar) { }
 
   public registroEntradaProducto(value: any) {
     this.snackBar.open('Registro de entrada de producto exitoso.', 'OK', {

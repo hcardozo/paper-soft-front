@@ -1,0 +1,30 @@
+.contenedor-register {
+  width: 30%;
+  border-radius: 10px;
+  margin: 2em auto;
+}
+
+.header-register {
+  display: block;
+  text-align: center;
+
+  >div {
+      margin: 20px 0 20px 0;
+
+      >i {
+          font-size: 75px;
+      }
+  }
+}
+
+.footer-register {
+  padding: 10px;
+  margin: 15px;
+  flex-direction: column;
+
+  >button {
+      width: 50%;
+      margin: auto;
+  }
+
+}
