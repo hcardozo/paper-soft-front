@@ -1,14 +1,18 @@
 import { Menu } from "../interfaces/menu-interface";
 
+
+
+
+
 export const MENU: Menu[] = [
   {
     name: 'Inventario',
     children: [
-      { name: 'Consulta de inventario', icon: 'search' , path: 'home/inventario' },
-      { name: 'Registrar producto', icon: 'library_add' },
-      { name: 'Editar producto', icon: 'rebase_edit' },
-      { name: 'Entrada de producto', icon: 'exit_to_app' },
-      { name: 'Salida de producto', icon: 'start' },
+      { name: 'Consulta de inventario', icon: 'search', path: 'home/inventario/consultaInventario' },
+      { name: 'Registrar producto', icon: 'library_add', path: 'home/inventario/registroProducto'  },
+      { name: 'Editar producto', icon: 'rebase_edit', path: 'home/inventario/editarProducto'  },
+      { name: 'Entrada de producto', icon: 'exit_to_app', path: 'home/inventario/registroEntradaProductos'  },
+      { name: 'Salida de producto', icon: 'start', path: 'home/inventario/registroSalidaProductos'  },
     ],
   },
   {
