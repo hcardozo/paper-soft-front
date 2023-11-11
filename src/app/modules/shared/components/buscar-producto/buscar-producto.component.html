@@ -1,0 +1,21 @@
+
+<form [formGroup]="productoFormGroup">
+  <div class="seleccion-productos">
+    <mat-form-field class="example-full-width" subscriptSizing="dynamic">
+      <mat-label>Seleccionar Producto</mat-label>
+      <input type="text"
+        placeholder="Lápiz..."
+        matInput
+        formControlName="producto"
+        [matAutocomplete]="auto">
+      <mat-autocomplete #auto="matAutocomplete" [displayWith]="displayFn">
+        <mat-option *ngFor="let item of dataProductos" [value]="item">{{item.nombre}}</mat-option>
+      </mat-autocomplete>
+    </mat-form-field>
+    <mat-form-field class="example-full-width" subscriptSizing="dynamic">
+      <mat-label>Cantidad</mat-label>
+      <input formControlName="cantidad" matInput type="number">
+    </mat-form-field>
+    <mat-icon color="primary" (click)="productosSeleccionados()">add_circle</mat-icon>
+  </div>
+</form>

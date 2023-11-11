@@ -1,0 +1,12 @@
+.seleccion-productos {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-evenly;
+
+
+  mat-icon {
+    transform: scale(2);
+    cursor: pointer;
+  }
+}

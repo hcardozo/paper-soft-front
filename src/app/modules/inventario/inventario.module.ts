@@ -2,16 +2,18 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { InventarioRoutingModule } from './inventario-routing.module';
-import { GestionInventariosComponent } from './components/gestion-inventarios/gestion-inventarios.component';
+import { SharedModule } from '../shared/shared.module';
+import { RegistroEntradaProductosComponent } from './components/registro-entrada-productos/registro-entrada-productos.component';
 
 
 @NgModule({
   declarations: [
-    GestionInventariosComponent
+    RegistroEntradaProductosComponent
   ],
   imports: [
     CommonModule,
-    InventarioRoutingModule
+    InventarioRoutingModule,
+    SharedModule
   ]
 })
 export class InventarioModule { }

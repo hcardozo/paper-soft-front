@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { GestionInventariosComponent } from './components/gestion-inventarios/gestion-inventarios.component';
+import { RegistroEntradaProductosComponent } from './components/registro-entrada-productos/registro-entrada-productos.component';
 
 const routes: Routes = [{
   path:'',
-  component: GestionInventariosComponent
+  component: RegistroEntradaProductosComponent
 }];
 
 @NgModule({
