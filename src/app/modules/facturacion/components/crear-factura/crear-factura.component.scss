@@ -1,0 +1,21 @@
+.contenedor-factura {
+    max-width: 1300px;
+    width: 90%;
+    margin: 40px auto;
+  }
+  
+  .content-factura {
+    width: 100%;
+    margin: auto;
+  }
+
+  .example-table-container {
+    position: relative;
+    overflow: auto;
+    >table{
+        margin: 20px;
+    }
+  }
+  .example-container {
+    position: relative;
+  }
