@@ -4,6 +4,8 @@ import { CommonModule } from '@angular/common';
 import { InventarioRoutingModule } from './inventario-routing.module';
 import { SharedModule } from '../shared/shared.module';
 import { RegistroEntradaProductosComponent } from './components/registro-entrada-productos/registro-entrada-productos.component';
+import { MatCardModule } from '@angular/material/card';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 
 @NgModule({
@@ -13,7 +15,9 @@ import { RegistroEntradaProductosComponent } from './components/registro-entrada
   imports: [
     CommonModule,
     InventarioRoutingModule,
-    SharedModule
+    SharedModule,
+    MatCardModule,
+    MatSnackBarModule
   ]
 })
 export class InventarioModule { }

@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-registro-entrada-productos',
@@ -6,8 +7,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./registro-entrada-productos.component.scss']
 })
 export class RegistroEntradaProductosComponent {
+  durationInSeconds = 5;
+
+  @ViewChild('alertaEntradaProducto') public alertaEntradaProducto: any;
+  constructor(private snackBar: MatSnackBar) {
+
+  }
 
   public test(value: any) {
-    console.log(value)
+    this.snackBar.open('Registro de entrada de producto exitoso.', 'Done', {
+      duration: 2000,
+      verticalPosition: "top", // Allowed values are  'top' | 'bottom'
+      horizontalPosition: "center" // Allowed values are 'start' | 'center' | 'end' | 'left' | 'right'
+    });
   }
 }

@@ -1,7 +1,7 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { Producto } from '../../interfaces/producto-interface';
 import { INVENTARIO } from '../../constants/inventario-consts';
-import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-buscar-producto',
@@ -18,13 +18,13 @@ export class BuscarProductoComponent implements OnInit {
 
   constructor(private formBuilder: FormBuilder) {
     this.productoFormGroup = this.formBuilder.group({
-      producto: ['', new FormControl()],
-      cantidad: [null, new FormControl()]
+      producto: new FormControl(null, [Validators.required]),
+      cantidad: new FormControl(null, [Validators.required]),
     })
   }
 
   public ngOnInit(): void {
-    this.productoFormGroup.get('producto')?.valueChanges.subscribe((item: any)=>{
+    this.productoFormGroup.get('producto')?.valueChanges.subscribe((item: any) => {
       this.productoSeleccionado = item;
     });
   }

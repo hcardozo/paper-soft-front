@@ -16,6 +16,10 @@
       <mat-label>Cantidad</mat-label>
       <input formControlName="cantidad" matInput type="number">
     </mat-form-field>
-    <mat-icon color="primary" (click)="productosSeleccionados()">add_circle</mat-icon>
+    <button mat-icon-button [disabled]="!productoFormGroup.valid"
+      (click)="productosSeleccionados()">
+      <mat-icon color="primary">add_circle</mat-icon>
+    </button>
+
   </div>
 </form>

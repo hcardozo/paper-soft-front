@@ -24,8 +24,8 @@
                   {{nestedTreeControl.isExpanded(node) ? 'expand_more' :
                   'chevron_right'}}
                 </mat-icon>
+                {{node.name}}
               </span>
-              {{node.name}}
             </div>
             <ul [hidden]="!nestedTreeControl.isExpanded(node)">
               <ng-container matTreeNodeOutlet></ng-container>

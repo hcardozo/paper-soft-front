@@ -1,1 +1,13 @@
-<app-buscar-producto (seleccionarProducto)="test($event)"></app-buscar-producto>
+<mat-card class="contenedor-registro-producto">
+
+  <mat-card-header class="header-registro-producto">
+    <h2>Registro de Entrada de productos</h2>
+  </mat-card-header>
+  <mat-card-content class="content-registro-producto row">
+    <app-buscar-producto (seleccionarProducto)="test($event)"></app-buscar-producto>
+  </mat-card-content>
+
+  <mat-card-footer class="footer-registro-producto row">
+    <!-- <a href="" >Registrarme</a> -->
+  </mat-card-footer>
+</mat-card>
