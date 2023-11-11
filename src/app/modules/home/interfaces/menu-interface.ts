@@ -6,4 +6,5 @@ export interface Menu {
   name: string;
   children?: Menu[];
   icon?: string;
+  path?: string;
 }

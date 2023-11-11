@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 import { of } from 'rxjs';
 import { Menu } from '../../interfaces/menu-interface';
 import { MENU } from '../../constants/menu-const';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-landing',
@@ -13,7 +14,9 @@ export class LandingComponent {
 
   public showFiller: boolean = false;
   public dataMenu;
-  constructor() {
+  constructor(
+    private router:Router
+  ) {
     this.dataMenu = MENU
   }
 
@@ -25,6 +28,9 @@ export class LandingComponent {
     return node.children != null && node.children.length > 0;
   }
 
+  public redirect(path: string){
+    this.router.navigate([path])
+  }
 }
 
 

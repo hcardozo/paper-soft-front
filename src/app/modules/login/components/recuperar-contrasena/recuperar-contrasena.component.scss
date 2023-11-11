@@ -1,10 +1,10 @@
-.contenedor-register {
+.contenedor-recuperar {
     width: 30%;
     border-radius: 10px;
     margin: 2em auto;
 }
 
-.header-register {
+.header-recuperar {
     display: block;
     text-align: center;
 
@@ -12,12 +12,14 @@
         margin: 20px 0 20px 0;
 
         >i {
-            font-size: 75px;
+            font-size: 40px;
         }
     }
 }
 
-.footer-register {
+.content-recuperar {}
+
+.footer-recuperar {
     padding: 10px;
     margin: 15px;
     flex-direction: column;
@@ -26,5 +28,4 @@
         width: 50%;
         margin: auto;
     }
-   
 }

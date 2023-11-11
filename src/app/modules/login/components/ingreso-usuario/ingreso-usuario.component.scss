@@ -17,7 +17,19 @@
     }
 }
 
-.content-login {}
+.content-login {
+    >span {
+        width: auto;
+        margin: auto;
+        margin-top: 15px;
+        color: blue;
+        /* Cambia el color del texto a azul para que se parezca a un enlace */
+        text-decoration: underline;
+        /* Agrega una línea subrayada para indicar que es un enlace */
+        cursor: pointer;
+        /* Cambia el cursor al estilo de la mano al pasar por encima */
+    }
+}
 
 .footer-login {
     padding: 10px;
