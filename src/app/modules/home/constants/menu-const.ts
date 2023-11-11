@@ -14,7 +14,7 @@ export const MENU: Menu[] = [
   {
     name: 'Facturacion',
     children: [
-      { name: 'Generar factura', icon: 'search' },
+      { name: 'Generar factura', icon: 'search', path: 'home/facturacion/crearFactura' },
     ],
   },
   {
