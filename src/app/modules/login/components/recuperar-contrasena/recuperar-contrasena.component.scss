@@ -29,3 +29,17 @@
         margin: auto;
     }
 }
+
+
+.SnackBar {
+    text-align: center;
+
+    >button {
+        margin: auto;
+        width: 50%;
+    }
+
+    >span {
+        margin: 15px 0 15px 0;
+    }
+}
